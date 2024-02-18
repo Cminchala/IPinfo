@@ -5,8 +5,7 @@
 - Get location of the IP(Not Exact) using google maps
 - Puts the IP address into a SQLite database in the history
 
-This project was done in 2022 
+This project was done in 2022 with the some minor changes
 https://github.com/Cminchala/308Project/tree/main
-- The difference
 - Added requirement.txt
 - Removed ZIP of the project with the included libraries
