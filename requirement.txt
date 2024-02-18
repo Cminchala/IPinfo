@@ -1,0 +1,6 @@
+Flask==1.1.2
+flask_sqlalchemy==2.5.1
+datetime==4.3
+requests==2.25.1
+json==2.0.9
+whoisapi==1.0.0

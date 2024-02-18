@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+  background-color: #668;
+  padding: 5px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+li
+{
+  float: left;
+  
+  border-right: 1px solid #bbb;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+a
+{
+  display:block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: lightblue;
+  height: 1900px; 
+}
+
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2>IP Info</h2>
+</header>
+
+<section>
+  
+    <ul>
+      <li><a href="/ipinfo">IP INFO</a></li>
+      <li><a href="/map">Map</a></li>
+      <li><a href="/whois">WhoIs</a></li>
+      <li><a href="/log">LOGS</a></li>
+    </ul>
+
+  
+  <article>
+
+    <div class="whoisform">
+        <h1>WhoIs </h1>
+        <form action="/whois/" method="POST">
+          
+            <input type="text" name="whoisip" id="whoisIP">
+            <input type="submit" value="Enter">
+        </form>
+    </div>
+    {% for key,value in show_whois.items() %}
+    <p>{{key}} : {{"\n"}} {{value}}</p>
+    {%endfor%}
+  </article>
+</section>
+
+
+</body>
+</html>
+
+
+
